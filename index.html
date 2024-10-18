@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سجاد</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <h1>سجاد تواصل</h1>
+    
+    <button class="add-post" onclick="toggleForm()">+</button>
+
+    <div class="container">
+        <div class="form-container" id="formContainer">
+            <div class="section">
+                <h2>نشر منشور جديد</h2>
+                <input type="text" id="title" placeholder="عنوان المنشور" required><br>
+                <textarea id="content" placeholder="اكتب منشورك هنا..." required></textarea><br>
+                <button onclick="addPost()">نشر</button>
+            </div>
+        </div>
+
+        <div id="notifications"></div>
+
+        <div class="section">
+            <h2>المنشورات</h2>
+            <div id="posts"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
